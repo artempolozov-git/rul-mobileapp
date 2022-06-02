@@ -18,6 +18,7 @@
         </div>
       </div>
 
+      <div class="receipt-header"></div>
       <div class="receipt-main__wrapper">
         <div class="barcode-icon">
           <img class="icon" src="@/assets/icons/barcode.svg">
@@ -112,12 +113,17 @@
   }
   .receipt-main__wrapper {
     width: 100%;
-    padding: 40px 15px 20px;
+    padding: 5px 15px 20px;
     box-sizing: border-box;
-    background: url(../assets/images/receipt-background.png);
-    background-size: cover;
-    background-position: top;
+    background-color: #fff;
     border-radius: 0 0 30px 30px;
+  }
+  .receipt-header {
+    height: 3vw;
+    background: url(../assets/images/receipt-header.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: repeat-x;
   }
   .barcode-icon {
     display: flex;
